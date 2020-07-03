@@ -7,12 +7,13 @@ phases:
     commands:
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
+      - cd /
+      - cd opt/maven/conf
+      - aws s3 cp s3://lca-code/settings.xml .
+      - cat settings.xml
   pre_build:
     commands:
       - echo Test started on `date`
-      - cd /
-      - cd opt/maven/conf
-      - cat settings.xml
       - mvn clean compile test
   build:
     commands:
