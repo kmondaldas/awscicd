@@ -28,7 +28,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-GetHelloWorld'
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Handler: com.aws.codestar.projecttemplates.handler.BeforeSaveActionSample
       Runtime: java8
       Role:
         Fn::GetAtt:
@@ -45,7 +45,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-PostHelloWorld'
-      Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
+      Handler: com.aws.codestar.projecttemplates.handler.BeforeSaveActionSample
       Runtime: java8
       Role:
         Fn::GetAtt:
