@@ -18,6 +18,7 @@ phases:
       - pwd
       - ls -la
       - cd opt/maven/conf
+      - aws s3 cp s3://lca-code/settings.xml .
       - cat settings.xml
       - mvn clean compile test
   build:
