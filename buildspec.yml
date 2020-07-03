@@ -10,10 +10,8 @@ phases:
   pre_build:
     commands:
       - echo Test started on `date`      
-      - cd opt/maven/conf
       - pwd
       - ls -la
-      - cat settings.xml
       - mvn clean compile test
   build:
     commands:
