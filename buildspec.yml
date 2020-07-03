@@ -20,9 +20,7 @@ phases:
       - ls -la
       - cd codebuild
       - cd output
-      - cd src810178075
-      - cd src
-      - pwd
+      - ls -la
       - echo Test started on `date`
       - mvn clean compile test
   build:
