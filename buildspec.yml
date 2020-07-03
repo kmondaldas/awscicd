@@ -9,7 +9,12 @@ phases:
       - pip install --upgrade awscli
   pre_build:
     commands:
-      - echo Test started on `date`      
+      - echo Test started on `date`  
+      - cd ..
+      - cd ..
+      - cd ..
+      - cd ..
+      - cd ..
       - pwd
       - ls -la
       - mvn clean compile test
