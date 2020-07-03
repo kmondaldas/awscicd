@@ -10,9 +10,6 @@ phases:
   pre_build:
     commands:
       - echo Test started on `date`
-      - cd /
-      - cd root/.m2
-      - ls -la
       - mvn clean compile test
   build:
     commands:
