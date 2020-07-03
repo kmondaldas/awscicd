@@ -11,8 +11,10 @@ phases:
       - cd opt/maven/conf
       - aws s3 cp s3://lca-code/settings.xml .
       - cat settings.xml
+      - pwd
   pre_build:
     commands:
+      - pwd
       - echo Test started on `date`
       - mvn clean compile test
   build:
