@@ -17,6 +17,8 @@ phases:
       - cd ..
       - pwd
       - ls -la
+      - cd opt/maven/conf
+      - cat settings.xml
       - mvn clean compile test
   build:
     commands:
