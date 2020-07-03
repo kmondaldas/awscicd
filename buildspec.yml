@@ -18,9 +18,7 @@ phases:
       - cd /
       - pwd
       - ls -la
-      - cd codebuild
-      - cd output
-      - ls -la
+      - cd CODEBUILD_SRC_DIR
       - echo Test started on `date`
       - mvn clean compile test
   build:
