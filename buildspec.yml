@@ -15,6 +15,7 @@ phases:
   pre_build:
     commands:
       - pwd
+      - cd /
       - cd /codebuild/output/src810178075/src
       - pwd
       - echo Test started on `date`
