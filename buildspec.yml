@@ -13,7 +13,6 @@ phases:
       - cd /
       - cd root/.m2
       - ls -la
-      - cat settings.xml
       - mvn clean compile test
   build:
     commands:
